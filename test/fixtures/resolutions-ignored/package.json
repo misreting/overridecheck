@@ -1,0 +1,10 @@
+{
+  "name": "fixture-resolutions-ignored",
+  "version": "1.0.0",
+  "dependencies": {
+    "to-regex-range": "5.0.1"
+  },
+  "resolutions": {
+    "is-number": "6.0.0"
+  }
+}

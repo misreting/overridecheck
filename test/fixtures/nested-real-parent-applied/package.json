@@ -1,0 +1,12 @@
+{
+  "name": "fixture-nested-real-parent-applied",
+  "version": "1.0.0",
+  "dependencies": {
+    "string-width": "4.2.3"
+  },
+  "overrides": {
+    "string-width": {
+      "is-fullwidth-code-point": "4.0.0"
+    }
+  }
+}

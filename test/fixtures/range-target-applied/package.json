@@ -1,0 +1,10 @@
+{
+  "name": "fixture-range-target-applied",
+  "version": "1.0.0",
+  "dependencies": {
+    "chalk": "2.4.2"
+  },
+  "overrides": {
+    "ansi-styles": "^4.0.0"
+  }
+}

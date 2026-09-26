@@ -1,0 +1,52 @@
+{
+  "name": "overridecheck",
+  "version": "0.1.0",
+  "description": "Verifies that npm package.json \"overrides\" actually took effect in package-lock.json — resolves each override rule against the real lockfile tree and flags the ones that silently did nothing.",
+  "keywords": [
+    "npm",
+    "overrides",
+    "resolutions",
+    "package-lock",
+    "supply-chain",
+    "cve",
+    "security",
+    "ci",
+    "audit"
+  ],
+  "license": "MIT",
+  "author": "__AUTHOR__",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/__GH_OWNER__/overridecheck.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "overridecheck": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json && chmod +x dist/cli.js",
+    "demo": "node examples/demo.ts",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build && npm run test:dist",
+    "test:dist": "node --test test/smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}

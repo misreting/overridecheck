@@ -1,0 +1,12 @@
+{
+  "name": "fixture-nested-nonexistent-parent",
+  "version": "1.0.0",
+  "dependencies": {
+    "string-width": "4.2.3"
+  },
+  "overrides": {
+    "nonexistent-parent-pkg": {
+      "is-fullwidth-code-point": "999.0.0"
+    }
+  }
+}
