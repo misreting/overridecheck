@@ -14,10 +14,10 @@
     "audit"
   ],
   "license": "MIT",
-  "author": "__AUTHOR__",
+  "author": "overridecheck",
   "repository": {
     "type": "git",
-    "url": "https://github.com/__GH_OWNER__/overridecheck.git"
+    "url": "https://github.com/agentscope-ai-java/overridecheck.git"
   },
   "type": "module",
   "engines": {
